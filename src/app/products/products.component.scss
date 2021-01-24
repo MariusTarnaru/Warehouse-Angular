@@ -1,0 +1,21 @@
+#product_table{
+  font-size: large;
+  color: #125699;
+
+}
+#product_table_content{
+  font-size: medium;
+  color: #1976d2;
+}
+
+.ui-button{
+  border: 0;
+  display: block;
+  color: darkblue;
+  background-color: #d8d7ff;
+  font-style: oblique;
+  transition: 0.5ms;
+}
+.ui-button:hover{
+  color: red;
+}

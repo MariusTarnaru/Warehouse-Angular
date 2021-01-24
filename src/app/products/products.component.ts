@@ -26,4 +26,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
   sendFromParentToChild(product: ProductModel): void {
     this.product = product;
   }
+  modifyProduct() {
+  }
 }

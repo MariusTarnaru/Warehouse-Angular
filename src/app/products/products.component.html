@@ -1,14 +1,18 @@
 <table id="product_table">
   <th>Id</th>
+  <th>Magazie</th>
+  <th>Furnizor</th>
   <th>Nume produs</th>
   <th>Cod produs</th>
-  <th>Nume categorie</th>
+  <th>Categorie</th>
   <th>Cantitate</th>
   <th>UM</th>
   <th>Note</th>
 
   <tr id="product_table_content" *ngFor="let product of products$ | async">
     <td>{{product.productId}}</td>
+    <td>{{product.codWarehouse}}</td>
+    <td>{{product.nameWarehouse}}</td>
     <td>{{product.productName}}</td>
     <td>{{product.productCod | uppercase}}</td>
     <td>{{product.categoryName}}</td>

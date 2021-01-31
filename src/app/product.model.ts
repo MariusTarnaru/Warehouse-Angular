@@ -1,5 +1,7 @@
 export interface ProductModel{
   productId: number;
+  codWarehouse: string;
+  nameWarehouse: string;
   productCod: string;
   categoryName: string;
   productName: string;

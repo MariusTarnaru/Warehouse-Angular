@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+
 body{
   font-family:Poppins,sans-serif;
   font-weight:400;
@@ -111,7 +120,7 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
   background:0 0;
   z-index:99999999;
   height:75px;
-  box-shadow:-2px 0 4px #0000003b
+  box-shadow:-2px 0 4px rgba(236, 229, 229, 0.23)
 }
 
 /*

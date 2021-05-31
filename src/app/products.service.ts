@@ -11,11 +11,10 @@ export class ProductsService {
   constructor(private http: HttpClient) { }
 
   getAllProducts(): Observable<ProductModel>{
-    return this.http.get<ProductModel>('http://localhost:8080/api/products/');
+    return this.http.get<ProductModel>('http://warehouse-env.eba-fgud4p4s.eu-central-1.elasticbeanstalk.com/api/products/');
   }
-
   addNewProduct(payload: ProductModel): Observable<ProductModel>{
-    return this.http.post<ProductModel>('http://localhost:8080/api/add/' , payload);
+    return this.http.post<ProductModel>('http://warehouse-env.eba-fgud4p4s.eu-central-1.elasticbeanstalk.com/api/add/' , payload);
   }
 
 }

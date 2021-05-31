@@ -6,7 +6,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 h1,h2,h3,h4,h5,h6 {
   margin: 8px 0;
 }
@@ -14,7 +13,6 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin: 0;
 }
-
 .spacer {
   flex: 1;
 }
@@ -139,7 +137,26 @@ a:hover {
 
 .circle-link:hover {
   transform: translateY(-0.25rem);
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 4.2);
+}
+.left-nav{
+  width: 20%;
+  float: left;
+}
+.nav{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.nav li{
+  margin: 1px 0;
+  /*border: 1px solid #999;*/
+}
+.nav li a{
+  display: block;
+  line-height: 2em;
+  width: 100%;
+  text-decoration: none;
 }
 
 footer {

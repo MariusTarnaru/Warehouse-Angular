@@ -14,6 +14,6 @@
     <td>{{product.categoryName}}</td>
     <td>{{product.quantity}}</td>
     <td>{{product.unit}}</td>
-    <td>{{product.notes}}</td><button class="ui-button" (click)="modifyProduct()">Modify</button>
+    <td>{{product.notes}}</td><button class="ui-button" [routerLink]="product" (click)="modifyProduct()">Modify</button>
 
 </table>

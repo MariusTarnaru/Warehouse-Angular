@@ -21,11 +21,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
   }
   sendFromParentToChild(product: ProductModel): void {
     this.product = product;
   }
-  modifyProduct() {
+  modifyProduct(): void {
+   // this.service.addNewProduct(this.product);
   }
 }

@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ProductModel} from '../product.model';
 import {Observable, Subscription} from 'rxjs';
 import {ProductsService} from '../products.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -14,18 +15,29 @@ export class ProductsComponent implements OnInit, OnDestroy {
   product: ProductModel;
   products$: Observable<ProductModel> = this.service.getAllProducts();
   sub: Subscription;
+  productDetails: any;
 
-  constructor(private service: ProductsService) { }
+  constructor(private service: ProductsService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+   // this.sub.unsubscribe();
   }
   sendFromParentToChild(product: ProductModel): void {
     this.product = product;
   }
-  modifyProduct() {
+  modifyProduct(): void {
+    this.service.modifyProduct(this.product);
+    alert('This task is in progress !!!');
+  }
+
+  getProductById(): void {
+    this.service.getProductById(this.product);
+  }
+
+  goToPage(page): void {
+    this.router.navigate([page]);
   }
 }

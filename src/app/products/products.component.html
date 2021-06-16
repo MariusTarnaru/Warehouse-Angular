@@ -1,4 +1,4 @@
-<table id="product_table">
+<table class="product-box" id="product_table">
   <th>Id</th>
   <th>Nume produs</th>
   <th>Cod produs</th>
@@ -14,6 +14,6 @@
     <td>{{product.categoryName}}</td>
     <td>{{product.quantity}}</td>
     <td>{{product.unit}}</td>
-    <td>{{product.notes}}</td><button class="ui-button" [routerLink]="product" (click)="modifyProduct()">Modify</button>
+    <td>{{product.notes}}</td><button class="ui-button" (click)="goToPage('/productDetails')">Modify</button>
 
 </table>

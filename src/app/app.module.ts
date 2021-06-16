@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductsService} from './products.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +24,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonToggleModule,
+    ReactiveFormsModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]

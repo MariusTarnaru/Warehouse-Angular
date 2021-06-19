@@ -8,12 +8,34 @@
           <h3>Product</h3>
 
           <div class="row">
-            <div class="col-md-2"> <label>Product Name</label></div>
+            <div class="col-md-3"> <label>Product Name:</label></div>
             <div class="col-md-9">
               <div class="input-space">
                 <label>
-                  <input placeholder="Enter name of product..." formControlName="productName" type="text">
+                  <input formControlName="productName" type="text" placeholder="Enter name of product...">
                 </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3"> <label>Description:</label></div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <label>
+                  <input formControlName="description" type="text" placeholder="what is that...">
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3"> <label>Quantity:</label></div>
+              <div class="col-md-9">
+                <div class="input-space">
+                  <label>
+                    <input formControlName="quantity" type="text" placeholder="quantity...">
+                  </label>
+                </div>
               </div>
             </div>
           </div>
